@@ -1,9 +1,11 @@
 body {
+  font-family: Noto Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 10px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  background-color: rgb(182, 179, 179);
+  background-color: #f2f4f6;
   display: grid;
-  grid-template-columns: 30rem 50rem;
+  grid-template-columns: 30rem 40rem;
+  justify-content: space-around;
+  padding: 1rem 0;
 }

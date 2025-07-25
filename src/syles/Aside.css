@@ -1,0 +1,114 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+aside h1,
+h2 {
+  font-size: 1.6rem;
+}
+.personalDetailsInput h1 {
+  margin-bottom: -0.8rem;
+}
+
+.personalDetailsInput,
+.eductionInputs,
+.workInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 0.4rem solid #e0e0e0;
+  border-radius: 0.8rem;
+  padding: 0 1.5rem 2rem;
+  align-items: flex-start;
+}
+
+aside label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #374151;
+}
+aside input {
+  width: 25rem;
+  height: 1.8rem;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+}
+.educationHeader,
+.workHeader {
+  display: grid;
+  grid-template-columns: 18rem 8rem;
+  justify-content: space-around;
+  cursor: pointer;
+  text-align: left;
+  height: 3rem;
+}
+.educationHeader button,
+.workHeader button {
+  height: 2rem;
+  align-self: center;
+}
+.educationNav,
+.workNav {
+  display: grid;
+  grid-template-areas: "label select button";
+  justify-content: space-around;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-align: left;
+}
+#educationList,
+.deleteEd,
+#workList,
+.deleteWk {
+  height: 2rem;
+  align-self: center;
+}
+.description {
+  min-height: 4rem;
+  max-height: 4rem;
+  min-width: 25rem;
+  max-width: 25rem;
+}
+
+.collapseDiv {
+  display: flex;
+}
+.collapseDiv img {
+  transition: transform 0.3s ease-in-out;
+}
+.turn {
+  transform: rotate(0.25turn);
+}
+
+.addEd,
+.addWk {
+  background-color: #4caf50;
+  border-radius: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.addEd:hover,
+.addWk:hover {
+  background-color: #0056b3;
+}
+
+.deleteEd,
+.deleteWk {
+  background-color: #f44336;
+  border-radius: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.deleteEd:disabled,
+.deleteWk:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

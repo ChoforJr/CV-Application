@@ -62,13 +62,22 @@ export function EducationInputs({
   return (
     <section className="eductionInputs">
       <div className="educationHeader">
-        <h2 onClick={onShow}>Education</h2>
+        <div className="collapseDiv" onClick={onShow}>
+          <img
+            src="public/menu-right.svg"
+            alt="Menu icon"
+            width="40px"
+            className={isActive ? "turn" : ""}
+          />
+          <h2>Education</h2>
+        </div>
         <button onClick={addEducation} className="addEd">
           Add Education
         </button>
       </div>
       {isActive && (
         <>
+          <hr width="100%" color="green" size="2px" align="left" />
           <div className="educationNav">
             <label htmlFor="educations">Select Education Entry: </label>
             <select

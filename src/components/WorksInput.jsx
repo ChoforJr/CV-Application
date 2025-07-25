@@ -58,13 +58,22 @@ export function WorksInput({
   return (
     <section className="workInputs">
       <div className="workHeader">
-        <h2 onClick={onShow}>Work</h2>
+        <div className="collapseDiv" onClick={onShow}>
+          <img
+            src="public/menu-right.svg"
+            alt="Menu icon"
+            width="40px"
+            className={isActive ? "turn" : ""}
+          />
+          <h2>Work</h2>
+        </div>
         <button onClick={addwork} className="addWk">
           Add work
         </button>
       </div>
       {isActive && (
         <>
+          <hr width="100%" color="green" size="2px" align="left" />
           <div className="workNav">
             <label htmlFor="works">Select work Entry: </label>
             <select

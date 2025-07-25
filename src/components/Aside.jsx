@@ -2,6 +2,7 @@ import { useState } from "react";
 import { PersonalDetailsInput } from "./PersonalDetailsInput";
 import { EducationInputs } from "./EducationInputs";
 import { WorksInput } from "./WorksInput";
+import "../syles/Aside.css";
 
 export function Aside({
   personalDetails,

@@ -17,7 +17,7 @@ export function PersonalDetailsInput({ personalDetails, setpersonalDetails }) {
     <section className="personalDetailsInput">
       <h1>Personal Details</h1>
       <label>
-        Full Name{" "}
+        Full Name
         <input
           id="fullName"
           type="text"
@@ -27,7 +27,7 @@ export function PersonalDetailsInput({ personalDetails, setpersonalDetails }) {
         />
       </label>
       <label>
-        Email{" "}
+        Email
         <input
           id="email"
           type="email"
@@ -37,7 +37,7 @@ export function PersonalDetailsInput({ personalDetails, setpersonalDetails }) {
         />
       </label>
       <label>
-        phoneNumber{" "}
+        Phone Number
         <input
           id="phoneNumber"
           type="tel"
@@ -47,7 +47,7 @@ export function PersonalDetailsInput({ personalDetails, setpersonalDetails }) {
         />
       </label>
       <label>
-        location{" "}
+        Location
         <input
           id="location"
           type="text"
