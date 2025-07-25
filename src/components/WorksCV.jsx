@@ -1,4 +1,4 @@
-export function WorkCV({ works }) {
+export function WorksCV({ works }) {
   return (
     <section className="educationCV">
       <h2>Work Experience</h2>
