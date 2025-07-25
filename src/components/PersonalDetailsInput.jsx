@@ -1,4 +1,18 @@
-export function PersonalDetailsInput({ personalDetails, onChangePD }) {
+export function PersonalDetailsInput({ personalDetails, setpersonalDetails }) {
+  function handlePDChange(event) {
+    if (event.target.id === "fullName") {
+      setpersonalDetails({ ...personalDetails, fullName: event.target.value });
+    } else if (event.target.id === "email") {
+      setpersonalDetails({ ...personalDetails, email: event.target.value });
+    } else if (event.target.id === "phoneNumber") {
+      setpersonalDetails({
+        ...personalDetails,
+        phoneNumber: event.target.value,
+      });
+    } else if (event.target.id === "location") {
+      setpersonalDetails({ ...personalDetails, location: event.target.value });
+    }
+  }
   return (
     <section className="personalDetailsInput">
       <h1>Personal Details</h1>
@@ -9,7 +23,7 @@ export function PersonalDetailsInput({ personalDetails, onChangePD }) {
           type="text"
           placeholder="Full Name"
           value={personalDetails.fullName}
-          onChange={onChangePD}
+          onChange={handlePDChange}
         />
       </label>
       <label>
@@ -19,7 +33,7 @@ export function PersonalDetailsInput({ personalDetails, onChangePD }) {
           type="email"
           placeholder="E-mail"
           value={personalDetails.email}
-          onChange={onChangePD}
+          onChange={handlePDChange}
         />
       </label>
       <label>
@@ -29,7 +43,7 @@ export function PersonalDetailsInput({ personalDetails, onChangePD }) {
           type="tel"
           placeholder="Phone Number"
           value={personalDetails.phoneNumber}
-          onChange={onChangePD}
+          onChange={handlePDChange}
         />
       </label>
       <label>
@@ -39,7 +53,7 @@ export function PersonalDetailsInput({ personalDetails, onChangePD }) {
           type="text"
           placeholder="Location"
           value={personalDetails.location}
-          onChange={onChangePD}
+          onChange={handlePDChange}
         />
       </label>
     </section>
