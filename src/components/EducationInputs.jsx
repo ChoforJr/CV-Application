@@ -1,3 +1,5 @@
+import menuRight from "/menu-right.svg";
+
 export function EducationInputs({
   educations,
   setEducations,
@@ -64,7 +66,7 @@ export function EducationInputs({
       <div className="educationHeader">
         <div className="collapseDiv" onClick={onShow}>
           <img
-            src="public/menu-right.svg"
+            src={menuRight}
             alt="Menu icon"
             width="40px"
             className={isActive ? "turn" : ""}

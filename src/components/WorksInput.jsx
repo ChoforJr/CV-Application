@@ -1,3 +1,5 @@
+import menuRight from "/menu-right.svg";
+
 export function WorksInput({
   works,
   setWorks,
@@ -60,7 +62,7 @@ export function WorksInput({
       <div className="workHeader">
         <div className="collapseDiv" onClick={onShow}>
           <img
-            src="public/menu-right.svg"
+            src={menuRight}
             alt="Menu icon"
             width="40px"
             className={isActive ? "turn" : ""}
