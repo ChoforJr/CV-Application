@@ -1,3 +1,78 @@
 main {
-  border: 0.1rem solid black;
+  border: 0.1rem solid #ccc;
+  box-shadow: -0.4rem -0.4rem #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #fff;
+}
+
+.personalDetailsCV {
+  background-color: #0056b3;
+  color: #fff;
+  min-height: 5rem;
+}
+.personalDetailsCV h1 {
+  font-size: 2.5rem;
+  margin: -0.25rem 0;
+}
+.personalDetailsCV div {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+.personalDetailsCV span {
+  display: flex;
+  justify-content: space-around;
+}
+.personalDetailsCV img {
+  width: 1.4rem;
+}
+
+.educationSet,
+.workSet {
+  display: grid;
+  grid-template-areas:
+    "name    period"
+    "degOrPes location"
+    "description description";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2rem 2rem 3.5rem;
+}
+.educationCV,
+.workCV {
+  text-align: left;
+  padding: 0 2rem;
+}
+.educationCV h2,
+.workCV h2 {
+  background-color: #ccc;
+  padding-left: 0.5rem;
+  margin-bottom: -0.3rem;
+}
+.educationCVSchoolN,
+.workCVComName {
+  grid-area: name;
+}
+
+.educationCVPeriod,
+.workCVPeriod {
+  grid-area: period;
+  text-align: right;
+}
+
+.educationCVDeg,
+.workCVPos {
+  grid-area: degOrPes;
+}
+
+.educationCVLoc,
+.workCVLoc {
+  grid-area: location;
+  text-align: right;
+}
+
+.educationCVDes,
+.workCVDes {
+  grid-area: description;
 }

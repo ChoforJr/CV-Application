@@ -37,6 +37,7 @@ aside input {
   height: 1.8rem;
   border-radius: 0.4rem;
   font-size: 1.2rem;
+  border: 0.01rem solid #ccc;
 }
 .educationHeader,
 .workHeader {

@@ -3,14 +3,14 @@ export function EducationCV({ educations }) {
     <section className="educationCV">
       <h2>Education</h2>
       {educations.map((education) => (
-        <div key={education.id}>
-          <h3>{education.schoolName}</h3>
-          <h3>
+        <div key={education.id} className="educationSet">
+          <h3 className="educationCVSchoolN">{education.schoolName}</h3>
+          <h3 className="educationCVPeriod">
             {education.startDate} - {education.endDate}
           </h3>
-          <p>{education.degree}</p>
-          <p>{education.location}</p>
-          <p>{education.description}</p>
+          <p className="educationCVDeg">{education.degree}</p>
+          <p className="educationCVLoc">{education.location}</p>
+          <p className="educationCVDes">{education.description}</p>
         </div>
       ))}
     </section>

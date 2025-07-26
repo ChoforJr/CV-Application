@@ -1,11 +1,13 @@
+* {
+  font-size: 20px;
+}
 body {
   font-family: Noto Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 10px;
   margin: 0 auto;
   text-align: center;
   background-color: #f2f4f6;
   display: grid;
-  grid-template-columns: 30rem 40rem;
+  grid-template-columns: 30rem 45rem;
   justify-content: space-around;
   padding: 1rem 0;
 }
